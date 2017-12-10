@@ -1,0 +1,26 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{%from "_formhelpers.html" import render_field%}
+
+
+{% block content %}
+<div class="container">
+
+    <form method="post" action="/login">
+
+        <dl>
+
+            {{wtf.quick_form(form)}}
+            <input class="btn btn_primary" type="submit" value="Login">
+
+        </dl>
+
+    </form>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+{{super()}}
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+{% endblock %}

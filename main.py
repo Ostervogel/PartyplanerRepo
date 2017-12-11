@@ -59,4 +59,4 @@ def dropsession():
 
 # _name_ wird automatisch zu main wenn das Programm gestartet wird
 if __name__ == "__main__":
-  #  app.run(debug=True)
+    app.run(debug=True)
